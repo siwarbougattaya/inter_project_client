@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="siwarClient.AdminlistController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="tableId" layoutX="5.0" layoutY="36.0" prefHeight="243.0" prefWidth="590.0">
+              <columns>
+                <TableColumn fx:id="id1" prefWidth="75.0" text="id" />
+                  <TableColumn fx:id="nom1" prefWidth="75.0" text="nom" />
+                  <TableColumn fx:id="prenom1" prefWidth="75.0" text="prenom" />
+                  <TableColumn fx:id="cin1" prefWidth="75.0" text="cin" />
+                  <TableColumn fx:id="username1" prefWidth="75.0" text="username" />
+                  <TableColumn fx:id="password1" prefWidth="75.0" text="password" />
+                  <TableColumn fx:id="status1" prefWidth="75.0" text="status" />
+                  <TableColumn fx:id="role1" prefWidth="75.0" text="role" />
+              </columns>
+            </TableView>
+            <Button fx:id="activer" layoutX="14.0" layoutY="294.0" mnemonicParsing="false" onAction="#activer" prefHeight="25.0" prefWidth="190.0" text="activer" />
+            <Button fx:id="desactiver" layoutX="396.0" layoutY="294.0" mnemonicParsing="false" onAction="#desactiver" prefHeight="25.0" prefWidth="190.0" text="desactiver" />
+         </children></Pane>
+   </children>
+</AnchorPane>
